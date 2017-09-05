@@ -60,5 +60,5 @@ if __name__ == "__main__":
     save_jtu(html)
     print("兰州理工大学招聘信息\n")
     for i in url_lut:
-        html = get_page(url_jtu)
-        save_jtu(html)
+        html = get_page(i)
+        save_lut(html)
