@@ -55,10 +55,8 @@ def save_jtu(html):
 if __name__ == "__main__":
     url_jtu = "http://jyzx.lzjtu.edu.cn/eweb/jygl/index.so"
     url_lut = ["http://jiuye.lut.cn/www/ContentsMain.asp?Page=1&MainType=0&Keywords=&ClassId=27","http://jiuye.lut.cn/www/ContentsMain.asp?Page=2&MainType=0&Keywords=&ClassId=27"]
-    print("兰州交通大学招聘信息\n")
     html = get_page(url_jtu)
     save_jtu(html)
-    print("兰州理工大学招聘信息\n")
     for i in url_lut:
         html = get_page(i)
         save_lut(html)
